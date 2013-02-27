@@ -5,12 +5,12 @@ require 'rack/test/accepts/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "rack-test-accepts"
-  gem.version       = Rack::Test::Rspec::Accepts::VERSION
+  gem.version       = Rack::Test::Accepts::VERSION
   gem.authors       = ["Iain Barnett"]
   gem.email         = ["iainspeed@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Helpers for rack-test that mean I don't need to remember the accept header syntax, or whether to prepend HTTP to them.}
+  gem.summary       = %q{Helpers for rack-test for the HTTP_ACCEPTS header.}
+  gem.homepage      = "https://github.com/yb66/rack-test-accepts"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
