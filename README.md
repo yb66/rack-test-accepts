@@ -24,6 +24,8 @@ Or install it yourself as:
 
 It's easy to add this in where it's needed by including it via the RSpec config:
 
+    require 'rack/test/accepts'
+
     RSpec.configure do |config|
       config.include Rack::Test::Accepts, :type => :request
 
