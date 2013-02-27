@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Iain Barnett"]
   gem.email         = ["iainspeed@gmail.com"]
   gem.description   = %q{Helpers for rack-test that mean I don't need to remember the accept header syntax, or whether to prepend HTTP to them.}
-  gem.summary       = %q{Helpers for rack-test for the HTTP_ACCEPTS header.}
+  gem.summary       = %q{Helpers for rack-test for the HTTP_ACCEPT header.}
   gem.homepage      = "https://github.com/yb66/rack-test-accepts"
 
   gem.files         = `git ls-files`.split($/)
