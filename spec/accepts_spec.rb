@@ -27,6 +27,10 @@ describe "Accepts module" do
           it { should = {"HTTP_ACCEPT" => v } }
         end
       end
+      context "calling accepts_xhr" do
+        subject { fake_thing.env :accepts_xhr }
+        it { should = {"HTTP_X_REQUESTED_WITH" => "XMLHttpRequest"} }
+      end        
       
     end
   end

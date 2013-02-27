@@ -18,10 +18,6 @@ SimpleCov.start do
   add_filter "/bin/"
 end
 
-require "rack/test"
-ENV['RACK_ENV'] ||= 'test'
-ENV["EXPECT_WITH"] ||= "racktest"
-
 
 Dir[ File.join( Spec_dir, "/support/**/*.rb")].each do |f|
   require f
