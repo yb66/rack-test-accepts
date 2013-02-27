@@ -2,6 +2,11 @@
 
 Helpers for rack-test that mean I don't need to remember the accept header syntax, or whether to prepend HTTP to them.
 
+### Build status ###
+
+Master branch:
+[![Build Status](https://travis-ci.org/yb66/rack-test-accepts.png?branch=master)](https://travis-ci.org/yb66/rack-test-accepts)
+
 ## Why? ##
 
 Just to make life a bit easier.
