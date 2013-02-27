@@ -37,6 +37,14 @@ then:
         post '/channel/create', body, env(:accepts_json)
       end
 
+It will work for any of the mime types listed in [Rack::Mime::MIME_TYPES](https://github.com/rack/rack/blob/master/lib/rack/mime.rb#L54) e.g.
+
+    get "/", {}, env(:accepts_zip)
+    put "/", {}, env(:accepts_xml)
+    delete "/", {}, env(:accepts_asm)
+
+or whichever crazy format your routes want to accept.
+
 ## Contributing
 
 1. Fork it
