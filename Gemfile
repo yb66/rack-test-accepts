@@ -3,8 +3,9 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in rack-test-rspec-accepts.gemspec
 gemspec
 
+gem "rake"
+
 group :development do
-  gem "rake"
   gem "wirble"
 end
 
