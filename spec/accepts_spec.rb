@@ -27,10 +27,21 @@ describe "Accepts module" do
           it { should = {"HTTP_ACCEPT" => v } }
         end
       end
-      context "calling accepts_xhr" do
-        subject { fake_thing.env :accepts_xhr }
-        it { should = {"HTTP_X_REQUESTED_WITH" => "XMLHttpRequest"} }
-      end        
+      context "xhr" do
+        context "calling accepts_xhr" do
+          subject { fake_thing.env :accepts_xhr }
+          it { should = {"HTTP_X_REQUESTED_WITH" => "XMLHttpRequest"} }
+        end  
+        context "via_xhr helper" do
+          subject { fake_thing.env :via_xhr }
+          it { should = {"HTTP_X_REQUESTED_WITH" => "XMLHttpRequest"} }
+        end
+      end
+      context "Failure" do
+        it "should fail because there is no zzz type" do
+          expect { fake_thing.env :via_zzz }.to raise_error NoMethodError
+        end
+      end   
       
     end
   end
