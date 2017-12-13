@@ -6,7 +6,7 @@ gemspec
 gem "rake"
 
 group :development do
-  gem "wirble"
+  gem "pry"
 end
 
 group :test do
