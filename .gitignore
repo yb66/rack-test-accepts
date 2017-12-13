@@ -19,3 +19,5 @@ tmp
 .rbx/
 vendor/
 bin/
+vendor.noindex/
+.ruby-version
