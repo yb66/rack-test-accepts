@@ -54,8 +54,8 @@ or whichever crazy format your routes want to accept.
 
 It also detects XHR in either of two ways.
 
-  get "/", {}, env(:accepts_xhr)
-  get "/", {}, env(:via_zip)
+    get "/", {}, env(:accepts_xhr)
+    get "/", {}, env(:via_zip)
 
 There's no difference.
 
