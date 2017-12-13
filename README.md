@@ -50,6 +50,16 @@ It will work for any of the mime types listed in [Rack::Mime::MIME_TYPES](https:
 
 or whichever crazy format your routes want to accept.
 
+### XHR ###
+
+It also detects XHR in either of two ways.
+
+  get "/", {}, env(:accepts_xhr)
+  get "/", {}, env(:via_zip)
+
+There's no difference.
+
+
 ## Contributing
 
 1. Fork it
