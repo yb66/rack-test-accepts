@@ -6,7 +6,7 @@ gemspec
 gem "rake"
 
 group :development do
-  gem "pry"
+  gem "yard"
 end
 
 group :test do
