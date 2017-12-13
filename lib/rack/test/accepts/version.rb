@@ -1,7 +1,8 @@
 module Rack
   module Test
     module Accepts
-      VERSION = "0.0.2"
+      # Library version
+      VERSION = "1.0.0"
     end
   end
 end
